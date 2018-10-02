@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>ArcGIS JavaScript API: Image2013_CGCS2000</title>
+    <script src="http://11.23.2.101/arcgis_js_api/library/3.20/3.20/init.js"></script>
+    <link rel="stylesheet" href="http://11.23.2.101/arcgis_js_api/library/3.20/3.20/esri/css/esri.css">
+
+    <script type="text/javascript">
+
+        var m_map={};
+
+        require([
+            "esri/layers/ArcGISDynamicMapServiceLayer",
+            "esri/layers/ArcGISTiledMapServiceLayer",
+            "esri/map",
+            "dojo/parser",
+            "dojo/domReady!",
+            "dijit/layout/BorderContainer",
+            "dijit/layout/ContentPane"
+
+        ], function(ArcGISDynamicMapServiceLayer, ArcGISTiledMapServiceLayer, Map, parser){
+            parser.parse();
+            var map = new Map("map");
+            var layer;
+            layer = new ArcGISTiledMapServiceLayer("http://11.23.2.101/arcgis/rest/services/Image2013_CGCS2000/MapServer");
+            map.addLayer(layer);
+            map.setZoom(3);
+            //map.centerAt(new esri.geometry.Point(119.3,25.9,new esri.SpatialReference({wkid:4490})));
+            //119.30239300, latitude=26.06971100
+            map.centerAt(new esri.geometry.Point(119.30239300,26.06971100,new esri.SpatialReference({wkid:4490})));
+
+            m_map=map;
+            m_map.test = function (lon,lat,level) {
+                map.setZoom(level);
+                map.centerAt(new esri.geometry.Point(lon,lat,new esri.SpatialReference({wkid:4490})));
+            }
+        });
+
+        var m_randomMove = function (lon,lat,level) {
+            m_map.test(lon,lat,level);
+        }
+    </script> </head> <body >  <div id="map" style="width:1200px;height:1500px;" >
+</div>  </body>
+</html>
