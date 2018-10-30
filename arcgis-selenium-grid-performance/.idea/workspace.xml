@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="471f97fb-db41-4ea4-8a1d-82f8e6634c91" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/arcgis/ArcgisPerformanceTest22.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/arcgis/FileUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/example/demo/arcgis/ArcgisPerformanceTest.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/arcgis/ArcgisPerformanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/arcgis/ArcgisPerformanceTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -30,17 +25,18 @@
     <session id="-1709938467">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="11" />
+          <entry key="project.closed" value="13" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="3" />
-          <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.14" value="2" />
           <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="12" />
+          <entry key="project.opened" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -48,9 +44,10 @@
           <entry key="cfg" value="1" />
           <entry key="class" value="1" />
           <entry key="gradle" value="1" />
-          <entry key="java" value="12" />
+          <entry key="java" value="16" />
           <entry key="js" value="1" />
           <entry key="json" value="1" />
+          <entry key="md" value="1" />
           <entry key="properties" value="2" />
         </counts>
       </usages-collector>
@@ -58,9 +55,10 @@
         <counts>
           <entry key="CLASS" value="1" />
           <entry key="Groovy" value="1" />
-          <entry key="JAVA" value="12" />
+          <entry key="JAVA" value="16" />
           <entry key="JSON" value="1" />
           <entry key="JavaScript" value="1" />
+          <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="2" />
         </counts>
@@ -70,7 +68,7 @@
           <entry key="cfg" value="8" />
           <entry key="dummy" value="26" />
           <entry key="gradle" value="10" />
-          <entry key="java" value="4751" />
+          <entry key="java" value="4870" />
           <entry key="js" value="11" />
           <entry key="json" value="1" />
           <entry key="properties" value="309" />
@@ -79,7 +77,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="10" />
-          <entry key="JAVA" value="4751" />
+          <entry key="JAVA" value="4870" />
           <entry key="JSON" value="1" />
           <entry key="JavaScript" value="11" />
           <entry key="PLAIN_TEXT" value="34" />
@@ -97,8 +95,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/arcgis/ArcgisPerformanceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="82">
-              <caret line="208" column="51" lean-forward="true" selection-start-line="208" selection-start-column="51" selection-end-line="208" selection-end-column="51" />
+            <state relative-caret-position="238">
+              <caret line="207" column="49" selection-start-line="207" selection-start-column="49" selection-end-line="207" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -107,10 +105,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/lang/StringBuffer.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/arcgis/ArcgisPerformanceTest22.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="427" column="37" selection-start-line="427" selection-start-column="37" selection-end-line="427" selection-end-column="37" />
+            <state relative-caret-position="165">
+              <caret line="11" selection-end-line="281" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Desktop/workspace/node.js/simulation_for_society/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="510">
+                <caret line="34" selection-start-line="34" selection-end-line="34" selection-end-column="11" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -118,7 +128,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/lang/Thread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="103">
+            <state relative-caret-position="11670">
               <caret line="833" selection-start-line="833" selection-end-line="833" />
             </state>
           </provider>
@@ -127,17 +137,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/io/FileOutputStream.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="83">
+            <state relative-caret-position="3045">
               <caret line="227" selection-start-line="227" selection-end-line="227" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Desktop/workspace/DatabaseUtils/src/main/java/cn/cityworks/database/util/FileUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1545">
-              <caret line="103" selection-start-line="1" selection-end-line="103" />
             </state>
           </provider>
         </entry>
@@ -156,15 +157,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
               <caret line="9" column="29" lean-forward="true" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-support/3.14.0/ca6132159a19ff765f46742a78c7f985cb44be7d/selenium-support-3.14.0-sources.jar!/org/openqa/selenium/support/ui/FluentWait.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3270">
-              <caret line="253" column="15" selection-start-line="253" selection-start-column="15" selection-end-line="253" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -204,8 +196,10 @@
       <find>%</find>
       <find>System.out</find>
       <find>init()</find>
-      <find>logFilename</find>
       <find>logInfo</find>
+      <find>maxWaitTimeInMilliseconds</find>
+      <find>速度</find>
+      <find>logFilename</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -572,7 +566,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="31" />
+    <option name="x" value="107" />
     <option name="y" value="23" />
     <option name="width" value="1389" />
     <option name="height" value="772" />
@@ -583,6 +577,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -628,14 +624,12 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539944860698" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540517349639" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -710,17 +704,19 @@
       <workItem from="1540177692428" duration="3283000" />
       <workItem from="1540259137378" duration="84000" />
       <workItem from="1540259245369" duration="355000" />
-      <workItem from="1540351240511" duration="5726000" />
+      <workItem from="1540351240511" duration="10015000" />
+      <workItem from="1540517518998" duration="1693000" />
+      <workItem from="1540880729596" duration="970000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49343000" />
+    <option name="totallyTimeSpent" value="56295000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="31" y="23" width="1389" height="772" extended-state="0" />
+    <frame x="107" y="23" width="1389" height="772" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19970304" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23756497" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -736,7 +732,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Build" order="7" weight="0.1764706" />
       <window_info anchor="bottom" id="Spring" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.59411764" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.2602941" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32941177" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
@@ -779,31 +775,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/arcgis/ArcgisPerformanceTest22.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-end-line="281" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/lang/Integer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="8700">
           <caret line="613" selection-start-line="613" selection-end-line="613" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-api/3.14.0/8c0af6fdccdc89a4394de7e3a8817ed2d6e41d7d/selenium-api-3.14.0-sources.jar!/org/openqa/selenium/WebDriver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1635">
-          <caret line="130" column="7" selection-start-line="130" selection-start-column="7" selection-end-line="130" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-remote-driver/3.14.0/6a4c36c02a1f03bdcf5769bffec9ed530ca51111/selenium-remote-driver-3.14.0-sources.jar!/org/openqa/selenium/remote/RemoteWebDriver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="141" column="9" selection-start-line="141" selection-start-column="9" selection-end-line="141" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -821,6 +796,79 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/concurrent/BlockingQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="231" column="9" selection-start-line="231" selection-start-column="9" selection-end-line="231" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-remote-driver/3.14.0/6a4c36c02a1f03bdcf5769bffec9ed530ca51111/selenium-remote-driver-3.14.0-sources.jar!/org/openqa/selenium/remote/RemoteWebDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="656">
+          <caret line="575" column="14" selection-start-line="575" selection-start-column="14" selection-end-line="575" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-api/3.14.0/8c0af6fdccdc89a4394de7e3a8817ed2d6e41d7d/selenium-api-3.14.0-sources.jar!/org/openqa/selenium/SearchContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-api/3.14.0/8c0af6fdccdc89a4394de7e3a8817ed2d6e41d7d/selenium-api-3.14.0-sources.jar!/org/openqa/selenium/WebDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="48" column="46" selection-start-line="48" selection-start-column="46" selection-end-line="48" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/lang/StringBuffer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="427" column="37" selection-start-line="427" selection-start-column="37" selection-end-line="427" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/arcgis/ArcgisPerformanceTest22.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" selection-end-line="281" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/workspace/node.js/simulation_for_society/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="510">
+            <caret line="34" selection-start-line="34" selection-end-line="34" selection-end-column="11" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11670">
+          <caret line="833" selection-start-line="833" selection-end-line="833" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/io/FileOutputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3045">
+          <caret line="227" selection-start-line="227" selection-end-line="227" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/arcgis/FileUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$USER_HOME$/study/graphql/demo/GraphQL-Project/server/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -835,34 +883,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="833" selection-start-line="833" selection-end-line="833" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/io/FileOutputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="227" selection-start-line="227" selection-end-line="227" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/arcgis/FileUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/concurrent/BlockingQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="231" column="9" selection-start-line="231" selection-start-column="9" selection-end-line="231" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -870,17 +890,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/lang/StringBuffer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="427" column="37" selection-start-line="427" selection-start-column="37" selection-end-line="427" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/arcgis/ArcgisPerformanceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="208" column="51" lean-forward="true" selection-start-line="208" selection-start-column="51" selection-end-line="208" selection-end-column="51" />
+        <state relative-caret-position="238">
+          <caret line="207" column="49" selection-start-line="207" selection-start-column="49" selection-end-line="207" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

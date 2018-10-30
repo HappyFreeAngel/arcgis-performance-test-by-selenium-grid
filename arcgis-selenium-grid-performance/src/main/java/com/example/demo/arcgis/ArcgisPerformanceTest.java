@@ -204,72 +204,57 @@ public class ArcgisPerformanceTest {
             //System.out.println(info);
             logBuf.append(info);
 
-            if(logBuf.length()>1024*10){
-                System.out.println(logBuf.toString());
-                logBuf.delete(0,logBuf.length()-1);
+            if(logBuf.length()>=100){
+                logBuf.delete(0,logBuf.length());
+                //logBuf.setLength(0);
+                logQueue.add(logBuf.toString());
+                //System.out.println(logBuf.toString());
             }
 
         }catch(Exception e){
             e.printStackTrace();
         }
+        logQueue.add(logBuf.toString());
     }
 
     Runnable remoteTask(final String hubServerURL, final Capabilities capabilities, String entryURL, File imageDir) {
 
         Runnable runnable = () -> {
                 while(remainTestCount.get()>0 && maxWaitTimeInMilliseconds.get() > 0) {
-                    long step = testNumberPerExplorerLifeTime;
-                    if(remainTestCount.get()<step){
-                        step = remainTestCount.get();
-                    }
 
-                    URL url = null;
-                    try{
-                        url = new URL(hubServerURL);
-                    }catch(MalformedURLException e){
-                        e.printStackTrace();
-                    }
-                    RemoteWebDriver webDriver = new RemoteWebDriver(url, capabilities);
-                    webDriver.get(entryURL);
-                    logInfo(webDriver.getTitle()+" 本次浏览器将执行"+step+"次测试.\n"); //System.out.println(webDriver.getPageSource());
-                    arcgisTest(webDriver, entryURL, imageDir, step);
-                    if(webDriver!=null) {
-                        webDriver.quit();
-                    }
-                    logInfo(" 本次浏览器已经执行"+step+"次测试完毕,浏览器退出."+" 已完成测试"+(totalTestCount.get()-remainTestCount.get())+"次. 测试总共还剩余"+ remainTestCount.get()+"次测试待完成. 当前测试速度"+getCurrentTestSpeedPerSecond()+"次/秒.\n");
+                        RemoteWebDriver webDriver=null;
+                        long step = testNumberPerExplorerLifeTime;
+                        if (remainTestCount.get() < step) {
+                            step = remainTestCount.get();
+                        }
+                        try {
+                           URL url = new URL(hubServerURL);
+                            webDriver = new RemoteWebDriver(url, capabilities);
+                            arcgisTest(webDriver, entryURL, imageDir, step);
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                        }
+                        finally {
+                            if (webDriver != null) {
+                                webDriver.quit();
+                            }
+                        }
+                        logInfo(" 本次浏览器已经执行" + step + "次测试完毕,浏览器退出." + " 已完成测试" + (totalTestCount.get() - remainTestCount.get()) + "次. 测试总共还剩余" + remainTestCount.get() + "次测试待完成. 当前测试速度" + getCurrentTestSpeedPerSecond() + "次/秒.\n");
                 }
         };
         return runnable;
     }
 
     //http://11.23.3.114:8777/
-    public void arcgisTest(WebDriver webDriver, String entryURL, File imageDir,long step) {
-
-        try {
-            webDriver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS);
-            webDriver.get(entryURL);
-            logInfo(entryURL + " 加载成功. title=" + webDriver.getTitle()+". 剩下待测试" + remainTestCount.get() + "次.\n");
-
-            try {
-                ((JavascriptExecutor) webDriver).executeScript("window.resizeTo(1200, 1500);");
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-
-            randomMove(webDriver, step, imageDir);
-        } catch (Exception e) {
-            e.printStackTrace();
-            System.exit(1);
-        }
-
-        if (webDriver != null) {
-            webDriver.close();
-        } else {
-            System.err.println("driver==null");
-        }
+    public void arcgisTest(WebDriver webDriver, String entryURL, File imageDir,long step) throws Exception {
+        webDriver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS);
+        webDriver.get(entryURL);
+        logInfo(entryURL + " 加载成功. title=" + webDriver.getTitle()+".所以浏览器总共剩下待测试" + remainTestCount.get() + "次. 本次浏览器将执行" + step + "次测试.\n");
+        ((JavascriptExecutor) webDriver).executeScript("window.resizeTo(1200, 1500);");
+        randomMove(webDriver, step, imageDir);
     }
 
-    private void randomMove(WebDriver webDriver, long step, File image_folder) {
+    private void randomMove(WebDriver webDriver, long step, File image_folder) throws Exception {
 
         //等待某个元素的出现,最多等待10秒
         WebDriverWait webDriverWait = new WebDriverWait(webDriver, 10);
@@ -296,13 +281,7 @@ public class ArcgisPerformanceTest {
 
             //waitFor(1000);
             if (webDriver instanceof JavascriptExecutor) {
-                try {
-                    ((JavascriptExecutor) webDriver).executeScript(randomMoveJavascript);
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-            } else {
-                throw new IllegalStateException("This driver does not support JavaScript!");
+                ((JavascriptExecutor) webDriver).executeScript(randomMoveJavascript);
             }
 
             int maxZoomLevel = 12;
